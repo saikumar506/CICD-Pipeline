@@ -7,3 +7,13 @@ sudo chmod 777 jenkins.sh
 ```
 sh jenkins.sh
 ```
+### Jenkins uses Port 8080, so after installation, you must go to your AWS EC2 Security Group and open Inbound Port 8080.
+## Copy the public IP
+```
+<publicip>:8080
+```
+## To unlock jenkins copy the password from the server and paste it in browser
+```
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+
